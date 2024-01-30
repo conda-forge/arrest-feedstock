@@ -1,5 +1,5 @@
 {% set name = "arrest" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/arrest-{{ version }}.tar.gz
-  sha256: f977afc25d65c82501102b0b1a711aa047551130d7860d7d922becb999f2035c
+  sha256: 5d4cdd2fb3cbf0214ed2bdc99c2debe91a8175ddbb99646eb1281494b12956c7
 
 build:
   noarch: python
