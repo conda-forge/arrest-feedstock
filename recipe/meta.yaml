@@ -1,6 +1,6 @@
-{% set python_min = '3.10.0' %}
+{% set python_min = "3.10.0" %}
 {% set name = "arrest" %}
-{% set version = "0.1.10" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/arrest-{{ version }}.tar.gz
-  sha256: 896cb241e9028f2988683b32dc98d64c1cdb1e9768e254dc356d457d124d65e7
+  sha256: 26fd328e8263df39cbc93d6e8d785b4895c2474a81596f2bfd4cdd6a3de59f18
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
