@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: arrest
-  version: "0.2.1"
+  version: "0.2.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/arrest-${{ version }}.tar.gz
-  sha256: 26fd328e8263df39cbc93d6e8d785b4895c2474a81596f2bfd4cdd6a3de59f18
+  sha256: a0a441218caf30a013d36e9ca67705e3810788c335914c6ecc7e445a895773e6
 
 build:
   number: 0
